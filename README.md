@@ -1,4 +1,4 @@
-![](https://media.discordapp.net/attachments/687375350459793437/687424454326091777/cb-ddt_n1.png?width=973&height=605)
+![](https://cdn.discordapp.com/attachments/687375350459793437/687424454326091777/cb-ddt_n1.png)
 ## cb-ddt
 Dark Discord theme for Chaturbate 🥵
 
