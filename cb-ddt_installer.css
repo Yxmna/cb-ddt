@@ -1,11 +1,12 @@
-/*
-    # Chaturbate Dark Discord Theme
-    # Repository    https://github.com/Yxmna/cb-ddt
-    # Version       v1
-    # License       GPL-3.0
-    # Author        Yomna (https://github.com/Yxmna)
-*/
-@-moz-document domain(chaturbate.com) {
+/* ==UserStyle==
+@name           cb-ddt
+@namespace      github.com/Yxmna/cb-ddt
+@version        1.0.00
+@description    Chaturbate Dark Discord Theme
+@author         Yomna
+@license        GPL-3.0
+==/UserStyle== */
+@-moz-document domain("chaturbate.com") {
   :root {
     --textarea: #36393F;
     --channel: #2F3136;
