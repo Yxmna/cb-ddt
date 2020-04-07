@@ -1,577 +1,580 @@
-/*
-    # Chaturbate Dark Discord Theme
-    # Repository    https://github.com/Yxmna/cb-ddt
-    # Version       v1
-    # License       GPL-3.0
-    # Author        Yomna (https://github.com/Yxmna)
-*/
-:root {
-    --textarea: #36393F;
-    --channel: #2F3136;
-    --userinfo: #292B2F;
-    --background: #202225;
-
-    --hover: #34363C;
-    --active: #393C43;
-
-    --white: #fff;
-    --text: #dcddde;
-    --inactive: #8e9297;
-    --embed: #72767d;
-
-    --bluebutton: #7289DA;
-    --bluelink: #00b0f4;
-
-    --red: #F04747;
-}
-
-/* TOP */
-#header {
-    background: var(--background);
-}
-#header #user_information {
-    border: none;
-    border-image: none;
-}
-#header #user_information .user_information_header {
-    background: var(--userinfo);
-    padding: 4px 0;
-    height: 17px;
-    width: 100%;
-}
-#header .user_information_header_icon {
-    display: none;
-}
-#header #user_information .bottom {
-    background: var(--userinfo);
-    padding: 4px;
-}
-#header #user_information a {
-    color: var(--bluelink);
-}
-
-#header strong {
-    float: right;
-    margin-top: 50px;
-    color: var(--background);
-    visibility: hidden;
-}
-
-#header strong::before {
-    content: "Dark Discord theme by Yomna 🥵";
-    color: var(--inactive);
-    visibility: visible;
-}
-
-
-/* NAV1 */
-.nav-bar {
-    border: none;
-    background: var(--background);
-}
-#nav {
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
-/* NAV2 */
-.top-section,
-.chat_room > div > div:nth-child(2) {
-    background: var(--channel) !important;
-    border: none !important;
-    padding: 4px 19px 4px 32px !important;
-}
-
-.chat_room > div > div:nth-child(2) > div {
-    top: 2px !important;
-}
-
-.chat_room > div > div:nth-child(2) div> div:nth-child(7) > div > div:first-child,
-.sub-nav > li:nth-child(7) > div > div:first-child {
-    background: var(--channel) !important;
-    border: 0px solid var(--textarea) !important;
-    color: var(--inactive) !important;
-}
-
-.chat_room > div > div:nth-child(2) div> div:nth-child(7) > div > div:first-child::before {
-    content: "# " !important;
-}
-
-.chat_room > div > div:nth-child(2) div> div:nth-child(7) > div > div:last-child,
-.sub-nav > li:nth-child(7) > div > div:last-child {
-    background: var(--channel) !important;
-    /*     border: 3px solid var(--textarea) !important; */
-    border: none !important;
-    box-shadow: 0 0 40px rgba(0, 0, 0, .75) !important;
-    padding: 8px 20px 0 0 !important;
-}
-
-
-.chat_room > div > div:nth-child(2) div> div:nth-child(7) > div div:last-child,
-.sub-nav > li:nth-child(7) > div > div:last-child {
-    border: none !important;
-}
-
-.chat_room > div > div:nth-child(2) div> div:nth-child(7) > div > div:last-child a::before,
-.sub-nav > li:nth-child(7) > div > div:last-child a::before {
-    content: "" !important;
-}
-
-
-
-.chat_room > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
-    top: 0px !important;
-    display: none;
-}
-
-.sub-nav a:hover,
-#followed_anchor:hover,
-.chat_room > div > div:nth-child(2) > div a:hover,
-.chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a:hover,
-.headline .buttons li a:hover {
-    background: var(--hover) !important;
-    color: #8e9297 !important;
-    border-bottom: none !important;
-    cursor: pointer !important;
-}
-.sub-nav a,
-#followed_anchor,
-.chat_room > div > div:nth-child(2) > div a,
-.chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a,
-.headline .buttons li a {
-    font-family: Helvetica, sans-serif !important;
-    border: none !important;
-    background-color: var(--channel) !important;
-    color: var(--inactive) !important;
-    border-radius: 4px !important;
-    padding: 4px 10px !important;
-    height: auto !important;
-}
-
-.chat_room > div > div:nth-child(2) > div:nth-child(8) {
-    display: none;
-}
-
-.sub-nav .active a,
-.sub-nav #followed_tab.active a,
-.chat_room > div > div:nth-child(2) > div:nth-child(1) a,
-.headline .buttons li.active a {
-    background: var(--active) !important;
-    color: var(--white) !important;
-}
-
-#followed_tab .followed_text::before,
-.chat_room > div > div:nth-child(2) > div a::before, .sub-nav a::before,
-.chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a::before,
-.headline .buttons li a::before {
-    content: "# ";
-}
-
-/* CONTENT */
-.content,
-.hashtags,
-.chat_room {
-    background-color: var(--textarea);
-}
-.content .c-1 {
-    margin: 0 25px 0 32px;
-}
-
-/* HASHTAG */
-#hashtag_ticker a,
-.tag a,
-.subject a {
-    border-radius: 3px;
-    color: #7289da;
-    padding: 2px;
-    background: rgba(114, 137, 218, .1);
-}
-
-#hashtag_ticker a:hover,
-.tag a:hover,
-.subject a:hover {
-    text-decoration: none;
-    background: var(--bluebutton);
-    color: var(--white);
-}
-
-/* LIST */
-#room_list > li {
-    background-color: var(--channel);
-    border: none;
-    margin: 0 30px 30px 0;
-    border-radius: 5px;
-    border-left: 4px solid var(--background);
-    padding: 7px 10px 5px 5px;
-    max-height: 2202px;
-}
-
-#room_list > li > div:nth-child(3) {
-    /*     background: none; */
-    border-radius: 5px;
-    margin-top: 5px;
-    position: initial;
-    padding: 4px;
-    border: none;
-}
-
-#room_list > li > div:nth-child(3).thumbnail_label_c_private_show {
-    background: var(--red);
-}
-
-#room_list img {
-    border-radius: 5px;
-}
-
-#room_list .subject > li {
-    padding: 0;
-}
-
-#room_list .subject {
-    height: auto !important;
-}
-
-
-#room_list .details {
-    margin-top: 5px;
-}
-
-#room_list .details .title {
-    border: none;
-}
-#room_list .details .title .age::after {
-    content: "y";
-}
-
-#room_list .details .title a {
-    color: var(--white);
-}
-
-#room_list .details .subject li {
-    color: var(--text);
-    max-height: 15px !important;
-}
-
-#room_list .genderf,
-#room_list .genderm,
-#room_list .genderc,
-#room_list .details .sub-info li {
-    background: none;
-    padding: 1px;
-    color: var(--embed);
-}
-
-#room_list .details .sub-info li::before {
-    content: "­";
-    margin: -1px
-}
-
-
-/* TEXT */
-h2 {
-    color: var(--embed)!important;
-}
-
-p,
-.tag_row span {
-    color: var(--text)!important;
-}
-
-.advanced_search_button,
-.hide_advanced_search_button,
-.followed_online_offline .title.bold a {
-    color: var(--white);
-    background: var(--bluebutton);
-    padding: 2px 5px;
-    border-radius: 2.5px;
-    font-size: 12px !important;
-}
-
-.followed_online_offline a {
-    color: var(--white);
-    background: var(--background);
-    padding: 2px 5px;
-    border-radius: 2.5px;
-    font-size: 12px !important;
-}
-
-
-
-#tag_table {
-    border: none;
-}
-
-#tag_table .tag_row {
-    background: var(--channel)!important;
-    border: none!important;
-    border-left: 8px solid var(--background)!important;
-}
-
-
-#tag_table .headers {
-    background: var(--background)
-}
-
-/* ROOM */
-.chat_room > div > div:nth-child(5),
-#defchat {
-    background: var(--channel) !important;
-    border: none!important;
-    border-left: 8px solid var(--background)!important;
-}
-
-.chat_room > div > div:nth-child(5) > div,
-#defchat .section,
-#defchat .info-user {
-    background: none !important;
-    border: none !important;
-    color: var(--text) !important;
-}
-
-.chat_room > div > div:nth-child(5) > div h1 {
-    color: var(--white) !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(7) div span:first-child {
-    color: var(--embed) !important;
-}
-.chat_room > div > div:nth-child(5) > div:nth-child(7) div span:last-child {
-    color: var(--text) !important;
-}
-
-
-.chat_room > div > div:nth-child(5) > div a {
-    color: var(--bluelink) !important;
-}
-
-.chat_room > div > div:nth-child(5) div:nth-child(2) > div {
-    border: none !important;
-}
-
-.chat_room > div > div:nth-child(5) div:nth-child(1) > a {
-    color: var(--bluelink) !important;
-}
-
-.chat_room > div > div:nth-child(5) div:nth-child(1) > div:nth-child(2) {
-    color: var(--white) !important;
-}
-
-
-
-
-
-/* FOOTER */
-#footer-holder {
-    background: var(--channel);
-}
-
-#footer-holder a {
-    color: var(--bluelink);
-}
-
-
-
-/* PROFILE  */
-.chat_room > div > div > div:nth-child(7) > div {
-    background: none !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1),
-#defchat .headline,
-#defchat .buttons {
-    background: var(--background) !important;
-    border-radius: 4px !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a,
-.headline .buttons li {
-    top: -1px !important;
-}
-
-chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) {
-    background: var(--channel) !important;
-    border: none !important;
-}
-
-
-/* CAM */
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child,
-#defchat .video-box {
-    background: var(--channel) !important;
-    border: none !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7),
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6),
-.broadcast_intro {
-    background: var(--background) !important;
-    margin-top: 8px !important;
-    border-radius: 4px !important;
-    margin-right: 8px !important;
-    color: var(--text) !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7) a {
-    color: var(--bluelink) !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6) tr,
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6) td {
-    background: none !important;
-    color: var(--inactive) !important;
-}
-
-/* VOID */
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) {
-    background: var(--channel) !important;
-}
-
-/* TCHAT */
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3),
-.chat-holder,
-.chat-holder .chat-box {
-    border-radius: 5px !important;
-    overflow: hidden !important;
-    background: var(--background) !important;
-    border: none;
-}
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) div,
-.chat-holder .buttons,
-.chat-box .chat-list {
-    background-color: var(--background) !important;
-}
-
-#tab-row > div,
-.chat-box .buttons li a {
-    color: var(--inactive) !important;
-    background-color: var(--channel) !important;
-    border-radius: 5px !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div span {
-    color: var(--text);
-    font-weight: 300;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2),
-.chat-box .chat-form,
-.chat-box .row {
-    background: var(--channel) !important;
-    border: none !important;
-    border-radius: 4px !important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) input,
-.chat-box input {
-    background: none !important;
-    color: var(--white) !important;
-}
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) img,
-.chat-box .smile {
-    border-radius: 50%!important;
-    padding: 0!important;
-}
-
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) span,
-.chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7) > div > span:last-child,
-.chat-box .button_send a,
-.chat-box .button_send {
-    background: var(--embed) !important;
-    color: var(--channel) !important;
-    text-shadow: none !important;
-    border-radius: 4px;
-}
-
-#obs_now_avalible {
-    background: var(--background) !important;
-    border: none !important;
-    border-radius: 5px !important;
-}
-#obs_now_avalible a,
-.tip_shell.goal_host_panel a,
-.info-user .toolbar_popup_link {
-    color: var(--bluelink)
-}
-#obs_now_avalible strong {
-    color: var(--white) !important;
-}
-
-.followers {
-    color: var(--text) !important;
-    font-weight: 300 !important;
-}
-.followers a,
-#flash_to_obs,
-.info-user a,
-.chat-box a {
-    color: var(--bluelink) !important;
-}
-
-.chat-holder li.active a {
-    background: var(--active) !important;
-    color: var(--white) !important;
-}
-
-.tip_shell.goal_host_panel {
-    background: none;
-}
-
-.info-user .headline .buttons {
-    padding: 6px 0;
-}
-
-.info-user legend,
-.info-user dt,
-#broadcaster_settings legend {
-    color: var(--embed) !important;
-}
-
-.info-user td,
-.info-user dd,
-#broadcaster_settings label,
-#broadcaster_settings strong {
-    color: var(--text) !important;
-}
-
-.info-user > div,
-.chat-box .settings-list,
-.chat-box .users-list {
-    background: none !important;
-}
-
-#broadcaster_settings select,
-#broadcaster_settings input,
-#roomtitleform input {
-    background: var(--background);
-    border: none;
-    color: var(--inactive);
-    border-radius: 4px;
-}
-
-.chat-box input,
-.chat-box select {
-    background: var(--channel);
-    border: none;
-    color: var(--inactive);
-    border-radius: 4px;
-}
-
-.section #tooltip-subject {
-    background: none;
-    border: none;
-    top: 20px;
-}
-
-#roomtitleform input {
-    padding: 2px 10px !important;
-}
-
-
-.chat_room > div > div:nth-child(2) {
-    padding: 10px !important;
-}
-
-span.followed_text::before {
-    content: "" !important;
+/* ==UserStyle==
+@name           cb-ddt 
+@namespace      github.com/Yxmna/cb-ddt
+@version        1.0.0
+@description    Chaturbate Dark Discord Theme
+@author         Yomna (https://github.com/Yxmna)
+==/UserStyle== */
+@-moz-document domain("chaturbate.com") {
+    :root {
+        --textarea: #36393F;
+        --channel: #2F3136;
+        --userinfo: #292B2F;
+        --background: #202225;
+
+        --hover: #34363C;
+        --active: #393C43;
+
+        --white: #fff;
+        --text: #dcddde;
+        --inactive: #8e9297;
+        --embed: #72767d;
+
+        --bluebutton: #7289DA;
+        --bluelink: #00b0f4;
+
+        --red: #F04747;
+    }
+
+    /* TOP */
+    #header {
+        background: var(--background);
+    }
+    #header #user_information {
+        border: none;
+        border-image: none;
+    }
+    #header #user_information .user_information_header {
+        background: var(--userinfo);
+        padding: 4px 0;
+        height: 17px;
+        width: 100%;
+    }
+    #header .user_information_header_icon {
+        display: none;
+    }
+    #header #user_information .bottom {
+        background: var(--userinfo);
+        padding: 4px;
+    }
+    #header #user_information a {
+        color: var(--bluelink);
+    }
+
+    #header strong {
+        float: right;
+        margin-top: 50px;
+        color: var(--background);
+        visibility: hidden;
+    }
+
+    #header strong::before {
+        content: "Dark Discord theme by Yomna 🥵";
+        color: var(--inactive);
+        visibility: visible;
+    }
+
+
+    /* NAV1 */
+    .nav-bar {
+        border: none;
+        background: var(--background);
+    }
+    #nav {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    /* NAV2 */
+    .top-section,
+    .chat_room > div > div:nth-child(2) {
+        background: var(--channel) !important;
+        border: none !important;
+        padding: 4px 19px 4px 32px !important;
+    }
+
+    .chat_room > div > div:nth-child(2) > div {
+        top: 2px !important;
+    }
+
+    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child,
+    .sub-nav > li:nth-child(7) > div > div:first-child {
+        background: var(--channel) !important;
+        border: 0px solid var(--textarea) !important;
+        color: var(--inactive) !important;
+    }
+
+    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child::before {
+        content: "# " !important;
+    }
+
+    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child,
+    .sub-nav > li:nth-child(7) > div > div:last-child {
+        background: var(--channel) !important;
+        /*     border: 3px solid var(--textarea) !important; */
+        border: none !important;
+        box-shadow: 0 0 40px rgba(0, 0, 0, .75) !important;
+        padding: 8px 20px 0 0 !important;
+    }
+
+
+    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div div:last-child,
+    .sub-nav > li:nth-child(7) > div > div:last-child {
+        border: none !important;
+    }
+
+    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child a::before,
+    .sub-nav > li:nth-child(7) > div > div:last-child a::before {
+        content: "" !important;
+    }
+
+
+
+    .chat_room > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+        top: 0px !important;
+        display: none;
+    }
+
+    .sub-nav a:hover,
+    #followed_anchor:hover,
+    .chat_room > div > div:nth-child(2) > div a:hover,
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a:hover,
+    .headline .buttons li a:hover {
+        background: var(--hover) !important;
+        color: #8e9297 !important;
+        border-bottom: none !important;
+        cursor: pointer !important;
+    }
+    .sub-nav a,
+    #followed_anchor,
+    .chat_room > div > div:nth-child(2) > div a,
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a,
+    .headline .buttons li a {
+        font-family: Helvetica, sans-serif !important;
+        border: none !important;
+        background-color: var(--channel) !important;
+        color: var(--inactive) !important;
+        border-radius: 4px !important;
+        padding: 4px 10px !important;
+        height: auto !important;
+    }
+
+    .chat_room > div > div:nth-child(2) > div:nth-child(8) {
+        display: none;
+    }
+
+    .sub-nav .active a,
+    .sub-nav #followed_tab.active a,
+    .chat_room > div > div:nth-child(2) > div:nth-child(1) a,
+    .headline .buttons li.active a {
+        background: var(--active) !important;
+        color: var(--white) !important;
+    }
+
+    #followed_tab .followed_text::before,
+    .chat_room > div > div:nth-child(2) > div a::before,
+    .sub-nav a::before,
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a::before,
+    .headline .buttons li a::before {
+        content: "# ";
+    }
+
+    /* CONTENT */
+    .content,
+    .hashtags,
+    .chat_room {
+        background-color: var(--textarea);
+    }
+    .content .c-1 {
+        margin: 0 25px 0 32px;
+    }
+
+    /* HASHTAG */
+    #hashtag_ticker a,
+    .tag a,
+    .subject a {
+        border-radius: 3px;
+        color: #7289da;
+        padding: 2px;
+        background: rgba(114, 137, 218, .1);
+    }
+
+    #hashtag_ticker a:hover,
+    .tag a:hover,
+    .subject a:hover {
+        text-decoration: none;
+        background: var(--bluebutton);
+        color: var(--white);
+    }
+
+    /* LIST */
+    #room_list > li {
+        background-color: var(--channel);
+        border: none;
+        margin: 0 30px 30px 0;
+        border-radius: 5px;
+        border-left: 4px solid var(--background);
+        padding: 7px 10px 5px 5px;
+        max-height: 2202px;
+    }
+
+    #room_list > li > div:nth-child(3) {
+        /*     background: none; */
+        border-radius: 5px;
+        margin-top: 5px;
+        position: initial;
+        padding: 4px;
+        border: none;
+    }
+
+    #room_list > li > div:nth-child(3).thumbnail_label_c_private_show {
+        background: var(--red);
+    }
+
+    #room_list img {
+        border-radius: 5px;
+    }
+
+    #room_list .subject > li {
+        padding: 0;
+    }
+
+    #room_list .subject {
+        height: auto !important;
+    }
+
+
+    #room_list .details {
+        margin-top: 5px;
+    }
+
+    #room_list .details .title {
+        border: none;
+    }
+    #room_list .details .title .age::after {
+        content: "y";
+    }
+
+    #room_list .details .title a {
+        color: var(--white);
+    }
+
+    #room_list .details .subject li {
+        color: var(--text);
+        max-height: 15px !important;
+    }
+
+    #room_list .genderf,
+    #room_list .genderm,
+    #room_list .genderc,
+    #room_list .details .sub-info li {
+        background: none;
+        padding: 1px;
+        color: var(--embed);
+    }
+
+    #room_list .details .sub-info li::before {
+        content: "­";
+        margin: -1px
+    }
+
+
+    /* TEXT */
+    h2 {
+        color: var(--embed)!important;
+    }
+
+    p,
+    .tag_row span {
+        color: var(--text)!important;
+    }
+
+    .advanced_search_button,
+    .hide_advanced_search_button,
+    .followed_online_offline .title.bold a {
+        color: var(--white);
+        background: var(--bluebutton);
+        padding: 2px 5px;
+        border-radius: 2.5px;
+        font-size: 12px !important;
+    }
+
+    .followed_online_offline a {
+        color: var(--white);
+        background: var(--background);
+        padding: 2px 5px;
+        border-radius: 2.5px;
+        font-size: 12px !important;
+    }
+
+
+
+    #tag_table {
+        border: none;
+    }
+
+    #tag_table .tag_row {
+        background: var(--channel)!important;
+        border: none!important;
+        border-left: 8px solid var(--background)!important;
+    }
+
+
+    #tag_table .headers {
+        background: var(--background)
+    }
+
+    /* ROOM */
+    .chat_room > div > div:nth-child(6),
+    #defchat {
+        background: var(--channel) !important;
+        border: none!important;
+        border-left: 8px solid var(--background)!important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div,
+    #defchat .section,
+    #defchat .info-user {
+        background: none !important;
+        border: none !important;
+        color: var(--text) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div h1 {
+        color: var(--white) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) div span:first-child {
+        color: var(--embed) !important;
+    }
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) div span:last-child {
+        color: var(--text) !important;
+    }
+
+
+    .chat_room > div > div:nth-child(6) > div a {
+        color: var(--bluelink) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) div:nth-child(2) > div {
+        border: none !important;
+    }
+
+    .chat_room > div > div:nth-child(6) div:nth-child(1) > a {
+        color: var(--bluelink) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) div:nth-child(1) > div:nth-child(2) {
+        color: var(--white) !important;
+    }
+
+
+
+
+
+    /* FOOTER */
+    #footer-holder {
+        background: var(--channel);
+    }
+
+    #footer-holder a {
+        color: var(--bluelink);
+    }
+
+
+
+    /* PROFILE  */
+    .chat_room > div > div > div:nth-child(7) > div {
+        background: none !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1),
+    #defchat .headline,
+    #defchat .buttons {
+        background: var(--background) !important;
+        border-radius: 4px !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a,
+    .headline .buttons li {
+        top: -1px !important;
+    }
+
+    chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) {
+        background: var(--channel) !important;
+        border: none !important;
+    }
+
+
+    /* CAM */
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child,
+    #defchat .video-box {
+        background: var(--channel) !important;
+        border: none !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child div:nth-child(7),
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child span:nth-child(6),
+    .broadcast_intro {
+        background: var(--background) !important;
+        margin-top: 8px !important;
+        border-radius: 4px !important;
+        margin-right: 8px !important;
+        color: var(--text) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child div:nth-child(7) a {
+        color: var(--bluelink) !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child span:nth-child(6) tr,
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child span:nth-child(6) td {
+        background: none !important;
+        color: var(--inactive) !important;
+    }
+
+    /* VOID */
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {
+        background: var(--channel) !important;
+    }
+
+    /* TCHAT */
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3),
+    .chat-holder,
+    .chat-holder .chat-box {
+        border-radius: 5px !important;
+        overflow: hidden !important;
+        background: var(--background) !important;
+        border: none;
+    }
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) div,
+    .chat-holder .buttons,
+    .chat-box .chat-list {
+        background-color: var(--background) !important;
+    }
+
+    #tab-row > div,
+    .chat-box .buttons li a {
+        color: var(--inactive) !important;
+        background-color: var(--channel) !important;
+        border-radius: 5px !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div span {
+        color: var(--text);
+        font-weight: 300;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2),
+    .chat-box .chat-form,
+    .chat-box .row {
+        background: var(--channel) !important;
+        border: none !important;
+        border-radius: 4px !important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) input,
+    .chat-box input {
+        background: none !important;
+        color: var(--white) !important;
+    }
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) img,
+    .chat-box .smile {
+        border-radius: 50%!important;
+        padding: 0!important;
+    }
+
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) span,
+    .chat_room > div > div:nth-child(6) > div:nth-child(2) > div:first-child div:nth-child(7) > div > span:last-child,
+    .chat-box .button_send a,
+    .chat-box .button_send {
+        background: var(--embed) !important;
+        color: var(--channel) !important;
+        text-shadow: none !important;
+        border-radius: 4px;
+    }
+
+    #obs_now_avalible {
+        background: var(--background) !important;
+        border: none !important;
+        border-radius: 5px !important;
+    }
+    #obs_now_avalible a,
+    .tip_shell.goal_host_panel a,
+    .info-user .toolbar_popup_link {
+        color: var(--bluelink)
+    }
+    #obs_now_avalible strong {
+        color: var(--white) !important;
+    }
+
+    .followers {
+        color: var(--text) !important;
+        font-weight: 300 !important;
+    }
+    .followers a,
+    #flash_to_obs,
+    .info-user a,
+    .chat-box a {
+        color: var(--bluelink) !important;
+    }
+
+    .chat-holder li.active a {
+        background: var(--active) !important;
+        color: var(--white) !important;
+    }
+
+    .tip_shell.goal_host_panel {
+        background: none;
+    }
+
+    .info-user .headline .buttons {
+        padding: 6px 0;
+    }
+
+    .info-user legend,
+    .info-user dt,
+    #broadcaster_settings legend {
+        color: var(--embed) !important;
+    }
+
+    .info-user td,
+    .info-user dd,
+    #broadcaster_settings label,
+    #broadcaster_settings strong {
+        color: var(--text) !important;
+    }
+
+    .info-user > div,
+    .chat-box .settings-list,
+    .chat-box .users-list {
+        background: none !important;
+    }
+
+    #broadcaster_settings select,
+    #broadcaster_settings input,
+    #roomtitleform input {
+        background: var(--background);
+        border: none;
+        color: var(--inactive);
+        border-radius: 4px;
+    }
+
+    .chat-box input,
+    .chat-box select {
+        background: var(--channel);
+        border: none;
+        color: var(--inactive);
+        border-radius: 4px;
+    }
+
+    .section #tooltip-subject {
+        background: none;
+        border: none;
+        top: 20px;
+    }
+
+    #roomtitleform input {
+        padding: 2px 10px !important;
+    }
+
+
+    .chat_room > div > div:nth-child(2) {
+        padding: 10px !important;
+    }
+
+    span.followed_text::before {
+        content: "" !important;
+    }
 }
