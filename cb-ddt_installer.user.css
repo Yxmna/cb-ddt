@@ -2,6 +2,7 @@
 @name           cb-ddt 
 @namespace      github.com/Yxmna/cb-ddt
 @version        1.0.0
+@license        GPL-3.0
 @description    Chaturbate Dark Discord Theme
 @author         Yomna (https://github.com/Yxmna)
 ==/UserStyle== */
@@ -78,28 +79,28 @@
 
     /* NAV2 */
     .top-section,
-    .chat_room > div > div:nth-child(2) {
+    .chat_room > div > div:nth-child(3) {
         background: var(--channel) !important;
         border: none !important;
         padding: 4px 19px 4px 32px !important;
     }
 
-    .chat_room > div > div:nth-child(2) > div {
+    .chat_room > div > div:nth-child(3) > div {
         top: 2px !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child,
+    .chat_room > div > div:nth-child(3) div > div:nth-child(7) > div > div:first-child,
     .sub-nav > li:nth-child(7) > div > div:first-child {
         background: var(--channel) !important;
         border: 0px solid var(--textarea) !important;
         color: var(--inactive) !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child::before {
+    .chat_room > div > div:nth-child(3) div > div:nth-child(7) > div > div:first-child::before {
         content: "# " !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child,
+    .chat_room > div > div:nth-child(3) div > div:nth-child(7) > div > div:last-child,
     .sub-nav > li:nth-child(7) > div > div:last-child {
         background: var(--channel) !important;
         /*     border: 3px solid var(--textarea) !important; */
@@ -109,12 +110,12 @@
     }
 
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div div:last-child,
+    .chat_room > div > div:nth-child(3) div > div:nth-child(7) > div div:last-child,
     .sub-nav > li:nth-child(7) > div > div:last-child {
         border: none !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child a::before,
+    .chat_room > div > div:nth-child(3) div > div:nth-child(7) > div > div:last-child a::before,
     .sub-nav > li:nth-child(7) > div > div:last-child a::before {
         content: "" !important;
     }
@@ -128,7 +129,7 @@
 
     .sub-nav a:hover,
     #followed_anchor:hover,
-    .chat_room > div > div:nth-child(2) > div a:hover,
+    .chat_room > div > div:nth-child(3) > div a:hover,
     .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a:hover,
     .headline .buttons li a:hover {
         background: var(--hover) !important;
@@ -138,7 +139,7 @@
     }
     .sub-nav a,
     #followed_anchor,
-    .chat_room > div > div:nth-child(2) > div a,
+    .chat_room > div > div:nth-child(3) > div a,
     .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a,
     .headline .buttons li a {
         font-family: Helvetica, sans-serif !important;
@@ -150,20 +151,20 @@
         height: auto !important;
     }
 
-    .chat_room > div > div:nth-child(2) > div:nth-child(8) {
+    .chat_room > div > div:nth-child(3) > div:nth-child(8) {
         display: none;
     }
 
     .sub-nav .active a,
     .sub-nav #followed_tab.active a,
-    .chat_room > div > div:nth-child(2) > div:nth-child(1) a,
+    .chat_room > div > div:nth-child(3) > div:nth-child(1) a,
     .headline .buttons li.active a {
         background: var(--active) !important;
         color: var(--white) !important;
     }
 
     #followed_tab .followed_text::before,
-    .chat_room > div > div:nth-child(2) > div a::before,
+    .chat_room > div > div:nth-child(3) > div a::before,
     .sub-nav a::before,
     .chat_room > div > div:nth-child(6) > div:nth-child(7) > div:nth-child(1) > a::before,
     .headline .buttons li a::before {
@@ -570,7 +571,7 @@
     }
 
 
-    .chat_room > div > div:nth-child(2) {
+    .chat_room > div > div:nth-child(3) {
         padding: 10px !important;
     }
 
