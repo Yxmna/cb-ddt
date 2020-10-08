@@ -3,7 +3,7 @@
 Dark Discord theme for Chaturbate 🥵
 
 #### Installation
-- Install [Stylus](https://github.com/openstyles/stylus)
+- Install [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 - Add [cb-ddt.css](https://raw.githubusercontent.com/Yxmna/cb-ddt/master/cb-ddt.user.css)
 - Enjoy ❤️
 
