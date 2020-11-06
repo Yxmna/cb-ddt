@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           cb-ddt 
 @namespace      github.com/Yxmna/cb-ddt
-@version        1.0.3
+@version        1.0.4
 @license        GPL-3.0
 @description    Chaturbate Dark Discord Theme
 @author         Yomna (https://github.com/Yxmna)
@@ -79,58 +79,105 @@
 
     /* NAV2 */
     .top-section,
-    .chat_room > div > div:nth-child(2) {
+    .chat_room > div > div:nth-child(1) {
         background: var(--channel) !important;
         border: none !important;
         padding: 4px 19px 4px 32px !important;
     }
 
-    .chat_room > div > div:nth-child(2) div {
+    .chat_room > div > div:nth-child(1) div {
         top: 2px !important;
     }
+    
+    
+    
+    
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child,
-    .sub-nav > li:nth-child(7) > div > div:first-child {
+/* BARMENU */
+
+  
+/* UL */
+    #main > div > div:nth-child(1) > div:nth-child(2)  {
+/*         margin-top: -5px !important;
+        margin-left: 90px !important;
+        min-width: 1000px !important; */
+    }
+
+/* LI */
+
+#main > div > div:nth-child(1) > div:nth-child(2) > div {
+/*         height: 32px !important;
+        margin-right: 10px !important; */
+}
+
+/* LI A */
+    
+    #main > div > div:nth-child(1) > div:nth-child(2) > div > a {
         background: var(--channel) !important;
         border: 0px solid var(--textarea) !important;
         color: var(--inactive) !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child::before {
-        content: "# " !important;
+/* LI A HOVER */
+
+#main > div > div:nth-child(1) > div:nth-child(2) > div a:hover {
+        background: var(--hover) !important;
+        color: #8e9297 !important;
+        border-bottom: none !important;
+        cursor: pointer !important;
+}
+    
+/* LI ACTIVE */
+
+#main > div > div:nth-child(1) > div:nth-child(2) > div:first-child a {
+        background: var(--active) !important;
+        color: var(--white) !important;
     }
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child,
+
+
+
+/*     .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:first-child,
+    .sub-nav > li:nth-child(7) > div > div:first-child {
+        background: var(--channel) !important;
+        border: 0px solid var(--textarea) !important;
+        color: var(--inactive) !important;
+    }
+ */
+/*     .chat_room > div > div:nth-child(1) div > div:nth-child(7) > div > div:first-child a::before {
+        content: "# " !important;
+    } */
+
+/*     .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child,
     .sub-nav > li:nth-child(7) > div > div:last-child {
         background: var(--channel) !important;
-        /*     border: 3px solid var(--textarea) !important; */
         border: none !important;
         box-shadow: 0 0 40px rgba(0, 0, 0, .75) !important;
         padding: 8px 20px 0 0 !important;
-    }
+    } */
     
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div div:last-child,
+/*     .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div div:last-child,
     .sub-nav > li:nth-child(7) > div > div:last-child {
         border: none !important;
-    }
+    } */
 
-    .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child a::before,
+/*     .chat_room > div > div:nth-child(2) div > div:nth-child(7) > div > div:last-child a::before,
     .sub-nav > li:nth-child(7) > div > div:last-child a::before {
         content: "" !important;
-    }
+    } */
 
 
 
-    .chat_room > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+/*     .chat_room > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
         top: 0px !important;
         display: none;
-    }
+    } */
 
     .sub-nav a:hover,
     #followed_anchor:hover,
     .chat_room > div > div:nth-child(2) > div a:hover,
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a:hover,
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1) > a:hover,
     .headline .buttons li a:hover {
         background: var(--hover) !important;
         color: #8e9297 !important;
@@ -140,7 +187,7 @@
     .sub-nav a,
     #followed_anchor,
     .chat_room > div > div:nth-child(2) > div a,
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a,
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1) > a,
     .headline .buttons li a {
         font-family: Helvetica, sans-serif !important;
         border: none !important;
@@ -151,22 +198,22 @@
         height: auto !important;
     }
 
-    .chat_room > div > div:nth-child(2) > div:nth-child(8) {
+/*     .chat_room > div > div:nth-child(2) > div:nth-child(8) {
         display: none;
-    }
+    } */
 
-    .sub-nav .active a,
+/*     .sub-nav .active a,
     .sub-nav #followed_tab.active a,
     .chat_room > div > div:nth-child(2) > div:nth-child(1) a,
     .headline .buttons li.active a {
         background: var(--active) !important;
         color: var(--white) !important;
-    }
+    } */
 
     #followed_tab .followed_text::before,
-    .chat_room > div > div:nth-child(2) > div a::before,
+    .chat_room > div > div:nth-child(1) > div a::before,
     .sub-nav a::before,
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a::before,
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1) > a::before,
     .headline .buttons li a::before {
         content: "# ";
     }
@@ -317,14 +364,14 @@
     }
 
     /* ROOM */
-    .chat_room > div > div:nth-child(5),
+    .chat_room > div > div:nth-child(4),
     #defchat {
         background: var(--channel) !important;
         border: none!important;
         border-left: 8px solid var(--background)!important;
     }
 
-    .chat_room > div > div:nth-child(5) > div,
+    .chat_room > div > div:nth-child(4) > div,
     #defchat .section,
     #defchat .info-user {
         background: none !important;
@@ -332,31 +379,31 @@
         color: var(--text) !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div h1 {
+    .chat_room > div > div:nth-child(4) > div h1 {
         color: var(--white) !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) div span:first-child {
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) div span:first-child {
         color: var(--embed) !important;
     }
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) div span:last-child {
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) div span:last-child {
         color: var(--text) !important;
     }
 
 
-    .chat_room > div > div:nth-child(5) > div a {
+    .chat_room > div > div:nth-child(4) > div a {
         color: var(--bluelink) !important;
     }
 
-    .chat_room > div > div:nth-child(5) div:nth-child(2) > div {
+    .chat_room > div > div:nth-child(4) div:nth-child(2) > div {
         border: none !important;
     }
 
-    .chat_room > div > div:nth-child(5) div:nth-child(1) > a {
+    .chat_room > div > div:nth-child(4) div:nth-child(1) > a {
         color: var(--bluelink) !important;
     }
 
-    .chat_room > div > div:nth-child(5) div:nth-child(1) > div:nth-child(2) {
+    .chat_room > div > div:nth-child(4) div:nth-child(1) > div:nth-child(2) {
         color: var(--white) !important;
     }
 
@@ -380,33 +427,33 @@
         background: none !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1),
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1),
     #defchat .headline,
     #defchat .buttons {
         background: var(--background) !important;
         border-radius: 4px !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) > a,
+    .chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1) > a,
     .headline .buttons li {
         top: -1px !important;
     }
 
-    chat_room > div > div:nth-child(5) > div:nth-child(7) > div:nth-child(1) {
+    chat_room > div > div:nth-child(4) > div:nth-child(7) > div:nth-child(1) {
         background: var(--channel) !important;
         border: none !important;
     }
 
 
     /* CAM */
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child,
     #defchat .video-box {
         background: var(--channel) !important;
         border: none !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7),
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6),
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child div:nth-child(7),
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child span:nth-child(6),
     .broadcast_intro {
         background: var(--background) !important;
         margin-top: 8px !important;
@@ -415,23 +462,23 @@
         color: var(--text) !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7) a {
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child div:nth-child(7) a {
         color: var(--bluelink) !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6) tr,
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child span:nth-child(6) td {
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child span:nth-child(6) tr,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child span:nth-child(6) td {
         background: none !important;
         color: var(--inactive) !important;
     }
 
     /* VOID */
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) {
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
         background: var(--channel) !important;
     }
 
     /* TCHAT */
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3),
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3),
     .chat-holder,
     .chat-holder .chat-box {
         border-radius: 5px !important;
@@ -439,7 +486,7 @@
         background: var(--background) !important;
         border: none;
     }
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) div,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) div,
     .chat-holder .buttons,
     .chat-box .chat-list {
         background-color: var(--background) !important;
@@ -452,12 +499,12 @@
         border-radius: 5px !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div span {
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div span {
         color: var(--text);
         font-weight: 300;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2),
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2),
     .chat-box .chat-form,
     .chat-box .row {
         background: var(--channel) !important;
@@ -465,19 +512,19 @@
         border-radius: 4px !important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) input,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) input,
     .chat-box input {
         background: none !important;
         color: var(--white) !important;
     }
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) img,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) img,
     .chat-box .smile {
         border-radius: 50%!important;
         padding: 0!important;
     }
 
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) span,
-    .chat_room > div > div:nth-child(5) > div:nth-child(2) > div:first-child div:nth-child(7) > div > span:last-child,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) span,
+    .chat_room > div > div:nth-child(4) > div:nth-child(2) > div:first-child div:nth-child(7) > div > span:last-child,
     .chat-box .button_send a,
     .chat-box .button_send {
         background: var(--embed) !important;
